@@ -3,12 +3,16 @@ public class FizzBuzz {
         for(int i = 1; i <= 100; i++){
             if (!(i%3 == 0) && !(i%5 == 0)) {
                 System.out.println(i);
+                continue;
             } else if (i%3 == 0 && i%5 == 0){
                 System.out.println("FizzBuzz");
+                continue;
             } else if (i%5 == 0){
                 System.out.println("Buzz");
+                continue;
             } else if (i%3 == 0){
                 System.out.println("Fizz");
+                continue;
             }
         }
     }
